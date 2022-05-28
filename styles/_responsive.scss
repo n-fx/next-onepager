@@ -1,0 +1,51 @@
+@media only screen and (max-width: 1400px) {
+    .hero h1 {
+        font-size: 5rem;
+        padding: 0.2em;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
+    .blog_content {
+        height: auto;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        padding: 0em;
+    }
+
+    .hero p {
+        max-width: 340px;
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .hero h1 {
+        font-size: 2rem;
+        padding: 0em;
+    }
+
+    section {
+        border: 1px solid $border-color;
+        border-radius: $border-radius;
+        padding: 1em;
+        margin-bottom: 2em;
+        height: auto;
+        position: relative;
+    }
+
+    ul.satelites li {
+        display: inline-block;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+    }
+}

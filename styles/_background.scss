@@ -1,0 +1,75 @@
+.star {
+    position: fixed;
+    width: 1500px;
+    height: 1500px;
+    background-image: url('../public/images/shape.svg');
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    opacity: 0;
+}
+
+.star_01 {
+    top: -300px;
+    left: -30%;
+    animation: starsrotate 120s ease-in-out infinite;
+}
+
+.star_02 {
+    top: -300px;
+    right: -5%;
+    animation: starsrotate_reverse 120s ease-in-out infinite;
+}
+ 
+
+@keyframes starsrotate {
+    0% {
+        opacity: 0.6;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        opacity: 0.1;
+        transform: rotate(180deg);
+    }
+
+    100% {
+        opacity: 0.6;
+        transform: rotate(0deg);
+    }
+}
+
+
+@keyframes starsrotate_reverse {
+    0% {
+
+        opacity: 0.1;
+        transform: rotate(180deg);
+    }
+
+    50% {
+        opacity: 0.6;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        opacity: 0.1;
+        transform: rotate(180deg);
+    }
+}
+
+
+@media only screen and (min-width: 2500px) { 
+.star_01 {
+    top: -300px;
+    left: 2%;
+    animation: starsrotate 120s ease-in-out infinite;
+}
+
+.star_02 {
+    top: -300px;
+    right: 2%;
+    animation: starsrotate_reverse 120s ease-in-out infinite;
+}
+
+}

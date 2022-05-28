@@ -3,4 +3,12 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+module.exports = {
+  images: {
+      domains: ['apod.nasa.gov'],
+  },
+  i18n: {
+    locales: ["en"],
+    defaultLocale: "en",
+  },
+}

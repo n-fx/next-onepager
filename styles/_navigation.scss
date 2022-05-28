@@ -1,0 +1,243 @@
+.logo {
+    display: inline-block;
+    width: 140px;
+    height: 60px;
+    left: 5%;
+    top: 5px;
+    position: relative;
+    background-image: url('../public/images/nasa_logo.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all 1.8s ease-in-out;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    padding: 1em;
+    z-index: 999;
+    position: relative;
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+nav.navmenu {
+    position: absolute;
+    display: inline-block;
+    right: 5%;
+    top: 20px;
+    font-weight: 600;
+}
+
+nav.navmenu ul.navbar-nav {
+    display: inline-block;
+}
+
+nav.navmenu ul.navbar-nav li {
+    display: inline-block;
+    margin: 2px;
+    padding: 1em 1em 1em 1em;
+    text-transform: uppercase;
+}
+
+nav.navmenu ul.navbar-nav li a {
+    color: #fff;
+}
+
+nav.navmenu ul.navbar-nav li a:hover,
+.sidemenu ul.navbar-nav li a:hover {
+    color: $base-color;
+}
+
+.menu-icon-close {
+    display: none;
+}
+
+.sidemenu {
+    opacity: 0.2;
+    position: fixed;
+    top: 20%;
+    left: -200px;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    transition: all 0.7s ease-in-out;
+}
+
+.sidemenu ul {
+    width: 200px;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    border: $border-width solid $border-color;
+    border-radius: $border-radius;
+}
+
+  .sidemenu .logo {
+    width: 100px;
+}
+
+ .sidemenu ul.navbar-nav li {
+    width: 100%;
+    padding: 4px;
+    padding-left: 20px;
+}
+
+.sidemenu ul.navbar-nav li a {
+    color: #fff;
+}
+
+@media only screen and (min-width: 1700px) { 
+
+    .scrolledsidemenu .sidemenu {
+        opacity: 1;
+        left: 1%;
+    }
+ 
+}
+
+@media only screen and (min-width: 2500px) { 
+
+    .scrolledsidemenu .sidemenu {
+        opacity: 1;
+        left: 8%;
+    }
+ 
+}
+
+
+@media only screen and (max-width: 1700px) {
+header {
+    padding: 1em;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    height: 100px;
+}
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .hero {
+        padding-top: 90px;
+    }
+
+    header {
+        padding: 1em;
+        z-index: 999;
+        position: fixed;
+        width: 100%;
+        top: 0px;
+        height: 100px;
+    }
+
+    nav.navmenu {
+        position: fixed;
+        opacity: 1;
+        width: 100%;
+        right: -1400px;
+        top: 100px;
+        height: 100vh;
+        display: block;
+        transition: all 0.5s ease;
+    }
+
+    nav.navmenu.showMenu {
+        opacity: 1;
+        width: 100%;
+        right: 0px;
+        display: block;
+
+        background: rgb(252, 248, 18);
+        background: -moz-radial-gradient(circle, rgba(252, 248, 18, 1) 0%, rgba(214, 211, 37, 1) 100%);
+        background: -webkit-radial-gradient(circle, rgba(252, 248, 18, 1) 0%, rgba(214, 211, 37, 1) 100%);
+        background: radial-gradient(circle, rgba(252, 248, 18, 1) 0%, rgba(214, 211, 37, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcf812", endColorstr="#d6d325", GradientType=1);
+
+    }
+
+    nav.navmenu ul.navbar-nav {
+        width: 100%;
+        height: 100%;
+        padding-top: 18%;
+    }
+
+    nav.navmenu ul.navbar-nav li {
+        display: block;
+        margin: 5px auto;
+        padding: 0.5em;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        font-size: 1.4em;
+    }
+
+    nav.navmenu ul.navbar-nav li a {
+        color: #111;
+    }
+
+    nav.navmenu ul.navbar-nav li a:hover {
+        color: #fff;
+    }
+
+    .menu-icon-close {
+        position: absolute;
+        right: 25px;
+        top: 2px;
+        display: flex;
+        width: 80px;
+        height: 80px;
+        padding: 0;
+        z-index: 999;
+        cursor: pointer;
+    }
+
+    .line {
+        fill: none;
+        stroke: $base-color;
+        stroke-width: 6;
+        transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+            stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .line1 {
+        stroke-dasharray: 60 207;
+        stroke-width: 6;
+    }
+
+    .line2 {
+        stroke-dasharray: 60 60;
+        stroke-width: 6;
+    }
+
+    .line3 {
+        stroke-dasharray: 60 207;
+        stroke-width: 6;
+    }
+
+    .hamburger_open .line1 {
+        stroke-dasharray: 90 207;
+        stroke-dashoffset: -134;
+        stroke-width: 6;
+    }
+
+    .hamburger_open .line2 {
+        stroke-dasharray: 1 60;
+        stroke-dashoffset: -30;
+        stroke-width: 6;
+    }
+
+    .hamburger_open .line3 {
+        stroke-dasharray: 90 207;
+        stroke-dashoffset: -134;
+        stroke-width: 6;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    nav.navmenu ul.navbar-nav {
+        padding-top: 25%;
+    }
+
+}

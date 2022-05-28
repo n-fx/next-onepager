@@ -1,0 +1,77 @@
+.nasa_image {
+    height: 300px;
+    width: 100%;
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: $border-width solid $border-color;
+    border-radius: $border-radius;
+}
+
+.h3_gallery {
+    min-height: 75px;
+    vertical-align: text-bottom;
+}
+
+.datum {
+    font-size: 0.9em;
+    color: $base-color;
+}
+
+.nasa_blog_image {
+    height: 360px;
+    width: 100%;
+    display: block;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #020203;
+    border: $border-width solid $border-color;
+    border-radius: $border-radius;
+}
+
+.blog_content {
+    max-height: 222px;
+    overflow-y: auto;
+    padding-right: 12px;
+    color: #d2cfda;
+}
+
+.h3_blog_news {
+    font-size: 1.75em;
+}
+
+.blog_content::-webkit-scrollbar {
+    width: 10px;
+}
+
+.blog_content::-webkit-scrollbar-track {
+    background: #1b1b1b;
+}
+
+.blog_content::-webkit-scrollbar-thumb {
+    background: #d0d0d4;
+}
+
+.blog_content::-webkit-scrollbar-thumb:hover {
+    background: #d0d0d4;
+}
+
+
+/* satellites */
+
+
+ul.satelites {
+    list-style-type: none;
+    display: inline-block;
+}
+
+ul.satelites li {
+    display: inline-block;
+    padding: 20px;
+}
+
+ul.satelites li h3 {
+    font-size: 1.15rem;  
+}

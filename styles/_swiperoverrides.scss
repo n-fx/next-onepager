@@ -1,0 +1,69 @@
+
+/* Swiper ovverides */
+
+// :root {
+//     --swiper-theme-color: $base-color !important; 
+// }
+
+.swiper-pagination {
+    position: absolute;
+    text-align: center;
+    transition: .3s opacity;
+    transform: translate3d(0,0,0);
+    z-index: 10; 
+  }
+  
+//   .swiper-pagination-bullet {
+//     width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,8px));
+//     height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,8px));
+//     display: inline-block;
+//     border-radius: 50%;
+//     background: #f22;
+//     opacity: 1;
+//   }
+  
+//   .swiper-pagination-bullet.swiper-pagination-bullet-active {
+//     background: yellow;
+//   }
+
+.swiper-pagination-progressbar-fill {
+  background: $base-color !important; 
+}
+
+.swiper-pagination-progressbar {
+  background-color: rgba(255,255,255,0.1) !important; 
+}
+
+.swiper-button-next, .swiper-button-prev { 
+  color: $base-color !important; 
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover { 
+  color: $white !important; 
+}
+
+ 
+.swiper-scrollbar { 
+  border-radius: 10px; 
+  position: relative;
+  -ms-touch-action: none;
+  background: $border-color !important; 
+}
+
+.swiper-scrollbar-drag {
+  height: 100%;
+  width: 100%; 
+  position: relative;
+  background: $base-color !important; 
+  border-radius: 10px;
+  left: 0;
+  top: 0;  
+}
+
+.swiper-pagination {
+  padding: 4px;
+}
+
+.swiper-pagination-fraction  {
+   font-size: 12px;
+}
